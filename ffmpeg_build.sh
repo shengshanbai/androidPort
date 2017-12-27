@@ -24,6 +24,7 @@ make clean
 --sysroot="$NDK_SYSROOT" \
 --enable-pic \
 --enable-pthreads \
+--enable-libx264 \
 --disable-debug \
 --disable-ffserver \
 --enable-version3 \
@@ -33,6 +34,8 @@ make clean
 --enable-shared \
 --disable-static \
 --disable-linux-perf \
+--disable-symver \
+--pkg-config="${2}/ffmpeg-pkg-config" \
 --prefix="${2}/build/${1}" \
 --extra-cflags="-I${TOOLCHAIN_PREFIX}/include $CFLAGS" \
 --extra-ldflags="-L${TOOLCHAIN_PREFIX}/lib $LDFLAGS" \

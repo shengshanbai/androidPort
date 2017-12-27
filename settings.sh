@@ -11,7 +11,7 @@ NDK_TOOLCHAIN_ABI_VERSION=4.9
 
 NUMBER_OF_CORES=$(nproc)
 HOST_UNAME=$(uname -m)
-TARGET_OS=linux
+TARGET_OS=android
 
 CFLAGS='-U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fno-strict-overflow -fstack-protector-all'
 LDFLAGS=' '
