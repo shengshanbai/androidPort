@@ -1,0 +1,67 @@
+contrib/tools/png-fix-itxt.o: contrib/tools/png-fix-itxt.c \
+ /home/ssbai/projects/android/androidPort/toolchain-android/sysroot/usr/include/stdio.h \
+ /home/ssbai/projects/android/androidPort/toolchain-android/sysroot/usr/include/sys/cdefs.h \
+ /home/ssbai/projects/android/androidPort/toolchain-android/sysroot/usr/include/sys/cdefs_elf.h \
+ /home/ssbai/projects/android/androidPort/toolchain-android/sysroot/usr/include/android/api-level.h \
+ /home/ssbai/projects/android/androidPort/toolchain-android/sysroot/usr/include/sys/types.h \
+ /home/ssbai/projects/android/androidPort/toolchain-android/lib/gcc/arm-linux-androideabi/4.9.x/include/stddef.h \
+ /home/ssbai/projects/android/androidPort/toolchain-android/lib/gcc/arm-linux-androideabi/4.9.x/include/stdint.h \
+ /home/ssbai/projects/android/androidPort/toolchain-android/sysroot/usr/include/stdint.h \
+ /home/ssbai/projects/android/androidPort/toolchain-android/sysroot/usr/include/sys/_types.h \
+ /home/ssbai/projects/android/androidPort/toolchain-android/sysroot/usr/include/machine/_types.h \
+ /home/ssbai/projects/android/androidPort/toolchain-android/sysroot/usr/include/sys/_wchar_limits.h \
+ /home/ssbai/projects/android/androidPort/toolchain-android/sysroot/usr/include/linux/posix_types.h \
+ /home/ssbai/projects/android/androidPort/toolchain-android/sysroot/usr/include/linux/stddef.h \
+ /home/ssbai/projects/android/androidPort/toolchain-android/sysroot/usr/include/linux/compiler.h \
+ /home/ssbai/projects/android/androidPort/toolchain-android/sysroot/usr/include/asm/posix_types.h \
+ /home/ssbai/projects/android/androidPort/toolchain-android/sysroot/usr/include/asm/types.h \
+ /home/ssbai/projects/android/androidPort/toolchain-android/sysroot/usr/include/linux/types.h \
+ /home/ssbai/projects/android/androidPort/toolchain-android/sysroot/usr/include/machine/kernel.h \
+ /home/ssbai/projects/android/androidPort/toolchain-android/sysroot/usr/include/sys/sysmacros.h \
+ /home/ssbai/projects/android/androidPort/toolchain-android/lib/gcc/arm-linux-androideabi/4.9.x/include/stdarg.h \
+ /home/ssbai/projects/android/androidPort/toolchain-android/sysroot/usr/include/zlib.h \
+ /home/ssbai/projects/android/androidPort/toolchain-android/sysroot/usr/include/zconf.h
+
+/home/ssbai/projects/android/androidPort/toolchain-android/sysroot/usr/include/stdio.h:
+
+/home/ssbai/projects/android/androidPort/toolchain-android/sysroot/usr/include/sys/cdefs.h:
+
+/home/ssbai/projects/android/androidPort/toolchain-android/sysroot/usr/include/sys/cdefs_elf.h:
+
+/home/ssbai/projects/android/androidPort/toolchain-android/sysroot/usr/include/android/api-level.h:
+
+/home/ssbai/projects/android/androidPort/toolchain-android/sysroot/usr/include/sys/types.h:
+
+/home/ssbai/projects/android/androidPort/toolchain-android/lib/gcc/arm-linux-androideabi/4.9.x/include/stddef.h:
+
+/home/ssbai/projects/android/androidPort/toolchain-android/lib/gcc/arm-linux-androideabi/4.9.x/include/stdint.h:
+
+/home/ssbai/projects/android/androidPort/toolchain-android/sysroot/usr/include/stdint.h:
+
+/home/ssbai/projects/android/androidPort/toolchain-android/sysroot/usr/include/sys/_types.h:
+
+/home/ssbai/projects/android/androidPort/toolchain-android/sysroot/usr/include/machine/_types.h:
+
+/home/ssbai/projects/android/androidPort/toolchain-android/sysroot/usr/include/sys/_wchar_limits.h:
+
+/home/ssbai/projects/android/androidPort/toolchain-android/sysroot/usr/include/linux/posix_types.h:
+
+/home/ssbai/projects/android/androidPort/toolchain-android/sysroot/usr/include/linux/stddef.h:
+
+/home/ssbai/projects/android/androidPort/toolchain-android/sysroot/usr/include/linux/compiler.h:
+
+/home/ssbai/projects/android/androidPort/toolchain-android/sysroot/usr/include/asm/posix_types.h:
+
+/home/ssbai/projects/android/androidPort/toolchain-android/sysroot/usr/include/asm/types.h:
+
+/home/ssbai/projects/android/androidPort/toolchain-android/sysroot/usr/include/linux/types.h:
+
+/home/ssbai/projects/android/androidPort/toolchain-android/sysroot/usr/include/machine/kernel.h:
+
+/home/ssbai/projects/android/androidPort/toolchain-android/sysroot/usr/include/sys/sysmacros.h:
+
+/home/ssbai/projects/android/androidPort/toolchain-android/lib/gcc/arm-linux-androideabi/4.9.x/include/stdarg.h:
+
+/home/ssbai/projects/android/androidPort/toolchain-android/sysroot/usr/include/zlib.h:
+
+/home/ssbai/projects/android/androidPort/toolchain-android/sysroot/usr/include/zconf.h:

@@ -14,4 +14,4 @@ HOST_UNAME=$(uname -m)
 TARGET_OS=android
 
 CFLAGS='-U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fno-strict-overflow -fstack-protector-all'
-LDFLAGS=' '
+LDFLAGS=' -lz -lm'

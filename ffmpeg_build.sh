@@ -28,6 +28,7 @@ make clean
 --disable-debug \
 --disable-ffserver \
 --enable-version3 \
+--enable-libfreetype \
 --enable-hardcoded-tables \
 --enable-gpl \
 --disable-doc \
