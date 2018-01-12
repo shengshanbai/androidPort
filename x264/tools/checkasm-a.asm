@@ -1,7 +1,7 @@
 ;*****************************************************************************
 ;* checkasm-a.asm: assembly check tool
 ;*****************************************************************************
-;* Copyright (C) 2008-2015 x264 project
+;* Copyright (C) 2008-2017 x264 project
 ;*
 ;* Authors: Loren Merritt <lorenm@u.washington.edu>
 ;*          Henrik Gramner <henrik@gramner.com>
@@ -68,14 +68,14 @@ cextern_naked puts
 ;-----------------------------------------------------------------------------
 cglobal checkasm_stack_clobber, 1,2
     ; Clobber the stack with junk below the stack pointer
-    %define size (max_args+6)*8
-    SUB  rsp, size
-    mov   r1, size-8
+    %define argsize (max_args+6)*8
+    SUB  rsp, argsize
+    mov   r1, argsize-8
 .loop:
     mov [rsp+r1], r0
     sub   r1, 8
     jge .loop
-    ADD  rsp, size
+    ADD  rsp, argsize
     RET
 
 %if WIN64
@@ -153,7 +153,11 @@ cglobal checkasm_call, 2,15,16,max_args*8+8
     mov  r9, rax
     mov r10, rdx
     lea  r0, [error_message]
+%if FORMAT_ELF
+    call puts wrt ..plt
+%else
     call puts
+%endif
     mov  r1, [rsp+max_args*8]
     mov  dword [r1], 0
     mov  rdx, r10
@@ -221,3 +225,14 @@ cglobal stack_pagealign, 2,2
     leave
     RET
 
+; Trigger a warmup of vector units
+%macro WARMUP 0
+cglobal checkasm_warmup, 0,0
+    xorps m0, m0
+    RET
+%endmacro
+
+INIT_YMM avx
+WARMUP
+INIT_ZMM avx512
+WARMUP

@@ -98,8 +98,8 @@ host_triplet = arm-unknown-linux-androideabi
 check_PROGRAMS = pngtest$(EXEEXT) pngunknown$(EXEEXT) \
 	pngstest$(EXEEXT) pngvalid$(EXEEXT) pngimage$(EXEEXT)
 bin_PROGRAMS = pngfix$(EXEEXT) png-fix-itxt$(EXEEXT)
-#am__append_1 = arm/arm_init.c\
-#	arm/filter_neon.S arm/filter_neon_intrinsics.c
+am__append_1 = arm/arm_init.c\
+	arm/filter_neon.S arm/filter_neon_intrinsics.c
 
 
 #   Versioned symbols and restricted exports
@@ -166,8 +166,8 @@ am__libpng16_la_SOURCES_DIST = png.c \
 	pngpriv.h pngstruct.h pngusr.dfa arm/arm_init.c \
 	arm/filter_neon.S arm/filter_neon_intrinsics.c
 am__dirstamp = $(am__leading_dot)dirstamp
-#am__objects_1 = arm/arm_init.lo arm/filter_neon.lo \
-#	arm/filter_neon_intrinsics.lo
+am__objects_1 = arm/arm_init.lo arm/filter_neon.lo \
+	arm/filter_neon_intrinsics.lo
 am_libpng16_la_OBJECTS = png.lo pngerror.lo \
 	pngget.lo pngmem.lo pngpread.lo pngread.lo pngrio.lo \
 	pngrtran.lo pngrutil.lo pngset.lo pngtrans.lo pngwio.lo \
@@ -631,7 +631,7 @@ pdfdir = ${docdir}
 # pkg-config stuff, note that libpng.pc is always required in order
 # to get the correct library
 pkgconfigdir = ${libdir}/pkgconfig
-prefix = /home/ssbai/projects/android/androidPort/build/armeabi-v7a
+prefix = /home/ssbai/projects/android/androidPort/build/armeabi-v7a-neon
 program_transform_name = s,x,x,
 psdir = ${docdir}
 sbindir = ${exec_prefix}/sbin

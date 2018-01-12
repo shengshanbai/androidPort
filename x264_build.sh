@@ -21,11 +21,14 @@ echo $CFLAGS
   --cross-prefix="$CROSS_PREFIX" \
   --sysroot="$NDK_SYSROOT" \
   --host="$HOST" \
+  --enable-asm \
   --enable-pic \
-  --disable-asm \
-  --disable-static \
-  --enable-shared \
+  --enable-thread \
+  --enable-strip \
+  --enable-static \
+  --disable-shared \
   --prefix="${BASEDIR}/build/$1" \
+  --extra-cflags="-Os -fpic $CFLAGS -march=armv7-a  -mfloat-abi=softfp -mfpu=neon" \
   --disable-cli || exit 1
 
 make -j${NUMBER_OF_CORES} install || exit 1

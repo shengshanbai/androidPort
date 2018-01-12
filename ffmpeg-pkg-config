@@ -3,7 +3,7 @@ pkg_name=${@: -1}
 
 SCRIPT=$(readlink -f "$0")
 BASEDIR=$(dirname "$SCRIPT")
-export PKG_CONFIG_PATH=${BASEDIR}/build/armeabi-v7a/lib/pkgconfig
+export PKG_CONFIG_PATH=${BASEDIR}/build/armeabi-v7a-neon/lib/pkgconfig
 case $1 in
   --exists)
     pkg-config --exists $pkg_name

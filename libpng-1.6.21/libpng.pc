@@ -1,4 +1,4 @@
-prefix=/home/ssbai/projects/android/androidPort/build/armeabi-v7a
+prefix=/home/ssbai/projects/android/androidPort/build/armeabi-v7a-neon
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include/libpng16
